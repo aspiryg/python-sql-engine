@@ -2,7 +2,7 @@
 
 A basic SQL database engine built from scratch in Python for educational purposes. This project demonstrates how a SQL database works under the hood.
 
-## 🎯 Features
+## Features
 
 - **CREATE TABLE**: Define tables with INT and VARCHAR columns
 - **INSERT**: Add data to tables
@@ -11,7 +11,7 @@ A basic SQL database engine built from scratch in Python for educational purpose
 - **Compound Conditions**: Use AND/OR in WHERE clauses
 - **Data Persistence**: Tables stored as JSON files
 
-## 📚 Architecture
+## Architecture
 
 The SQL engine consists of five main components:
 
@@ -143,7 +143,7 @@ SQL String → Lexer → Tokens → Parser → AST → Executor → Result
 - `.describe tablename`: Show table structure
 - `.quit`: Exit the REPL
 
-## 🚀 Usage
+## Usage
 
 ### Interactive Mode (REPL)
 
@@ -217,7 +217,7 @@ tables = engine.list_tables()
 print(tables)
 ```
 
-## 📖 Detailed Component Breakdown
+## Detailed Component Breakdown
 
 ### Token Types
 - **Keywords**: SELECT, FROM, WHERE, INSERT, INTO, VALUES, CREATE, TABLE, INT, VARCHAR, AND, OR
@@ -313,7 +313,7 @@ SelectStatement(
 3. Project only 'name' column
 4. Return result set
 
-## 🎓 Learning Objectives
+## Learning Objectives
 
 This project demonstrates:
 
@@ -325,7 +325,7 @@ This project demonstrates:
 6. **Data Persistence**: Serialization and deserialization
 7. **Software Architecture**: Separation of concerns, modular design
 
-## 🔧 Limitations (By Design)
+## Limitations (By Design)
 
 This is a learning project, so many features of production databases are intentionally omitted:
 
@@ -342,7 +342,7 @@ This is a learning project, so many features of production databases are intenti
 - No concurrent access handling
 - Simple JSON storage (not optimized for performance)
 
-## 🚀 Possible Extensions
+## Possible Extensions
 
 Ideas for learning more:
 
@@ -357,7 +357,7 @@ Ideas for learning more:
 9. **Query Optimization**: Plan and optimize query execution
 10. **Add More Data Types**: BOOLEAN, DATE, FLOAT, etc.
 
-## 📝 File Structure
+## File Structure
 
 ```
 sql_engine/
