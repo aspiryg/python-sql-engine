@@ -16,6 +16,32 @@ A basic SQL database engine built from scratch in Python for educational purpose
 - TODO: Add architecture diagram and explanation
 - TODO:
 
+## High-Level Data Flow
+
+```
+   User Input (SQL String)
+         |
+         v
+    ┌─────────┐
+    │  LEXER  │ ← Breaks SQL text into tokens
+    └────┬────┘
+         │ [Tokens]
+         v
+    ┌─────────┐
+    │ PARSER  │ ← Organizes tokens into Abstract Syntax Tree (AST)
+    └────┬────┘
+         │ [AST]
+         v
+    ┌──────────┐
+    │ EXECUTOR │ ← Executes the AST against storage
+    └────┬─────┘
+         │ [Result]
+         v
+   ┌──────────────┐
+   │ Query Result │ ← Formatted output
+   └──────────────┘
+```
+
 ## 🤝 Contributing
 
 This is a learning project! Feel free to:
